@@ -13,6 +13,7 @@
       <sprite>sprites\spr_mirilla</sprite>
       <sprite>sprites\spr_player</sprite>
       <sprite>sprites\spr_bullet</sprite>
+      <sprite>sprites\spr_bullet2</sprite>
     </sprites>
     <sprites name="icons">
       <sprite>sprites\spr_red</sprite>
