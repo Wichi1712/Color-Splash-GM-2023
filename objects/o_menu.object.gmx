@@ -79,8 +79,8 @@ cursor_sprite = spr_mirilla;
             <kind>1</kind>
             <string>///Dibuja texto y titulo de inicio
 draw_set_font( font0);
-draw_sprite( spr_title2, 0,room_width / 2, 150);
-draw_text_color( room_width / 2 - 345, 740,"Desarrollado por Wichi 2019",c_white, c_white, c_white, c_white,1);
+//draw_sprite( spr_title2, 0,room_width / 2, 150);
+draw_text_color( room_width/2-100, 740,"Desarrollado por Wichi 2019",c_white, c_white, c_white, c_white,1);
 draw_set_color( c_white);
 </string>
           </argument>

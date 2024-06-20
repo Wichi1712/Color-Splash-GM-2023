@@ -26,7 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>///Envia al room menu
-if( keyboard_check( vk_enter)){ room_goto(r_menu);}
+if( keyboard_check( vk_enter)){
+    room_goto(r_menu);
+    //game_restart();
+}
 </string>
           </argument>
         </arguments>

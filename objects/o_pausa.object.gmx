@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -54,6 +54,7 @@ if (keyboard_check_pressed(vk_escape)){
     if (pausa == false){
         instance_deactivate_all(true);
         pausa = true;
+        audio_pause_music();
         if(!instance_exists( o_buttonExit)){
             instance_create(room_width/3 + 30, room_height/3 + 200, o_buttonExit);
         }
@@ -61,7 +62,10 @@ if (keyboard_check_pressed(vk_escape)){
     else {pausa = false; with(o_buttonExit)instance_destroy();}
 }
 
-if (pausa == false)instance_activate_all();
+if (pausa == false){
+    instance_activate_all();
+    audio_resume_music();
+}
 </string>
           </argument>
         </arguments>
@@ -87,8 +91,9 @@ if (pausa == false)instance_activate_all();
             <string>///Dibuja texto
 if ( pausa == true){
     draw_rectangle_color(32,room_height,room_width - 234, 0,c_black,c_black,c_orange,c_orange,0);
-    draw_text( room_width/3, room_height/2 - 200, string_upper("pause"));
-    draw_text(room_width/3 - 55, 300, "Press    ESCAPE");
+    //draw_text( room_width/3, room_height/2 - 200, string_upper("pause"));
+    draw_sprite(spr_pause,0,90,150);
+    draw_text(room_width/3 - 55, 350, "Press ESCAPE");
 }
 </string>
           </argument>

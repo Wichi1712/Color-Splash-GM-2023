@@ -75,11 +75,11 @@ OPCION 2
 Usando una imagen o sprite por cada array
 y asignando esa imagen en el sprite_index.
 */
-sprColor[0] = spr_colorBlack;
-sprColor[1] = spr_colorWhite;
-sprColor[2] = spr_colorBlue;
-sprColor[3] = spr_colorYellow;
-sprColor[4] = spr_colorRed;
+sprColor[0] = spr_bubbleBlack;
+sprColor[1] = spr_bubbleWhite;
+sprColor[2] = spr_bubbleBlue;
+sprColor[3] = spr_bubbleYellow;
+sprColor[4] = spr_bubbleRed;
 sprite_index = sprColor[randColor];
 /*-------------------------------------------------------------------------
 OPCION 3
@@ -116,6 +116,7 @@ image_blend = make_color_rgb( random(255),random(255),random(255),);
           <argument>
             <kind>1</kind>
             <string>///Destruccion de color y reduccion de vidas de player
+image_speed=0.1;
 //scr_destruccion();
 //Cada vez que la burbuja llega al borde inferior.
 if( y &gt; room_height){

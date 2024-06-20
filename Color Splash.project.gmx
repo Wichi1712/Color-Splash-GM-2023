@@ -29,6 +29,11 @@
       <sprite>sprites\spr_colorBlue</sprite>
       <sprite>sprites\spr_colorNegro</sprite>
       <sprite>sprites\spr_colorRed</sprite>
+      <sprite>sprites\spr_bubbleBlue</sprite>
+      <sprite>sprites\spr_bubbleRed</sprite>
+      <sprite>sprites\spr_bubbleYellow</sprite>
+      <sprite>sprites\spr_bubbleBlack</sprite>
+      <sprite>sprites\spr_bubbleWhite</sprite>
     </sprites>
     <sprites name="splash">
       <sprite>sprites\spr_splashBlack</sprite>
@@ -45,6 +50,7 @@
       <sprite>sprites\spr_bitMapFont</sprite>
       <sprite>sprites\spr_bloque</sprite>
       <sprite>sprites\spr_bloque2</sprite>
+      <sprite>sprites\spr_pause</sprite>
     </sprites>
     <sprites name="buttons">
       <sprite>sprites\spr_button</sprite>
@@ -57,6 +63,7 @@
     <background>background\bg_2</background>
     <background>background\bg_3</background>
     <background>background\bg_lateral1</background>
+    <background>background\bg_title</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
