@@ -30,9 +30,11 @@ global.fntBitmapFont = font_add_sprite( spr_bitMapFont, ord(" "),1,1);
 window_set_caption( "Splash Color");
 window_set_fullscreen(true);
 
-instance_create(room_width/2, room_height/3 + 50, o_buttonPlay );
-instance_create(room_width/2, room_height/3 + 150, o_buttonExit );
-instance_create(room_width/2, room_height/3 + 250, o_buttonMore );
+audio_play_music(intro,true);
+
+instance_create(room_width/2, room_height/3 + 110, o_buttonPlay );
+instance_create(room_width/2, room_height/3 + 180, o_buttonMore );
+instance_create(room_width/2, room_height/3 + 250, o_buttonExit );
 </string>
           </argument>
         </arguments>

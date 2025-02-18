@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Color inicial de boton
-image_blend = c_green;
+image_blend = c_olive;
 textButton = "";
 </string>
           </argument>
@@ -51,7 +51,7 @@ textButton = "";
           <argument>
             <kind>1</kind>
             <string>///Color normal green
-image_blend = c_green;
+image_blend = c_olive;
 </string>
           </argument>
         </arguments>
@@ -75,7 +75,8 @@ image_blend = c_green;
           <argument>
             <kind>1</kind>
             <string>///Color resaltado Yellow
-image_blend = c_yellow;
+image_blend = c_white;
+audio_play_sound(buttonSelect,1,0);
 </string>
           </argument>
         </arguments>
@@ -102,7 +103,7 @@ image_blend = c_yellow;
 draw_self();
 
 draw_set_font(global.fntBitmapFont);
-draw_text(x - 10,y,string(textButton));
+//draw_text(x - 10,y,string(textButton));
 </string>
           </argument>
         </arguments>

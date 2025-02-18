@@ -7,6 +7,8 @@
   <sounds name="sound">
     <sound>sound\splash</sound>
     <sound>sound\Buble</sound>
+    <sound>sound\buttonSelect</sound>
+    <sound>sound\intro</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="player">
@@ -14,6 +16,7 @@
       <sprite>sprites\spr_player</sprite>
       <sprite>sprites\spr_bullet</sprite>
       <sprite>sprites\spr_bullet2</sprite>
+      <sprite>sprites\spr_arrow</sprite>
     </sprites>
     <sprites name="icons">
       <sprite>sprites\spr_red</sprite>
@@ -34,6 +37,8 @@
       <sprite>sprites\spr_bubbleYellow</sprite>
       <sprite>sprites\spr_bubbleBlack</sprite>
       <sprite>sprites\spr_bubbleWhite</sprite>
+      <sprite>sprites\spr_bubbleBlack0</sprite>
+      <sprite>sprites\spr_specialBubble</sprite>
     </sprites>
     <sprites name="splash">
       <sprite>sprites\spr_splashBlack</sprite>
@@ -54,6 +59,12 @@
     </sprites>
     <sprites name="buttons">
       <sprite>sprites\spr_button</sprite>
+      <sprite>sprites\spr_btn_restart</sprite>
+      <sprite>sprites\spr_btn_about</sprite>
+      <sprite>sprites\spr_btn_menu</sprite>
+      <sprite>sprites\spr_btn_exit</sprite>
+      <sprite>sprites\spr_btn_play</sprite>
+      <sprite>sprites\spr_but_restart</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -64,6 +75,12 @@
     <background>background\bg_3</background>
     <background>background\bg_lateral1</background>
     <background>background\bg_title</background>
+    <background>background\bg_congratulations</background>
+    <background>background\bg_gameOver</background>
+    <background>background\bg_pause</background>
+    <background>background\bg_blue_splash</background>
+    <background>background\bg_green_splash</background>
+    <background>background\bg_pause2</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">

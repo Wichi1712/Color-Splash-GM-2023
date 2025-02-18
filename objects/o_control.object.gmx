@@ -169,6 +169,7 @@ time+= stepTime;
 
 //control vidas--PERDISTE
 if ( vidas == 0){
+    audio_stop_music();
     with( o_player){ instance_destroy();}//destruimos player
     
     vidas = 0;//Mantenemos vidas en cero
@@ -510,10 +511,11 @@ if(!instance_exists( o_buttonExit)){
 //draw_set_halign( fa_center);
 if( vidas &lt;= 0){
     //draw_rectangle_color(20, 100, rightPlay - 20, 600,c_orange,c_olive,c_orange,c_orange,0);
-    draw_sprite( spr_gameOver,0, 80,150);
+    //draw_sprite( spr_gameOver,0, 80,150);
+    draw_background(bg_gameOver,80,150 );
     //draw_text( rightPlay div 2 - 120, infPlay div 2 - 200, string_upper("Game Over"));
-    draw_text( rightPlay div 2 - 80 , infPlay div 2 - 100, "Score = " +string(scoreTotal));
-    draw_text( rightPlay div 2 - 80 , infPlay div 2 - 50, "Time = " + string(round(time)));
+    //draw_text( rightPlay div 2 - 80 , infPlay div 2 - 100, "Score = " +string(scoreTotal));
+    //draw_text( rightPlay div 2 - 80 , infPlay div 2 - 50, "Time = " + string(round(time)));
     
     //Continua desde donde se quedo
     if(!instance_exists( o_buttonContinuar)){
@@ -546,7 +548,8 @@ if( vidas &lt;= 0){
             <kind>1</kind>
             <string>///Dibuja felicitaciones
 if( modeGame == 4){// &amp;&amp; scoreTotal &gt;= 100){
-    draw_sprite( spr_congratulation,0, 80,150);
+    //draw_sprite( spr_congratulation,0, 80,150);
+    draw_background(bg_congratulations,80,150 );
     draw_text( rightPlay div 2 - 80 , infPlay div 2 - 100, "Score = " + string(scoreTotal));
     draw_text( rightPlay div 2 - 80 , infPlay div 2 - 50, "Time = " + string(round(time)));
     draw_text( rightPlay div 2 - 80 , infPlay div 2 + 20, "ENTER para #volver a jugar");

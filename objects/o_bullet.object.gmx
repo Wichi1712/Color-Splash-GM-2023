@@ -28,7 +28,7 @@
             <string>///Variables de velocidad y direccion
 image_speed = 0.2;
 velocidad = 10;
-var dir;
+var dir;//90 para que la flecha vaya hacia arriba
 dir = point_direction( x,y, mouse_x, mouse_y);
 direction = dir;
 ///////sound_add( disparo,50,1)

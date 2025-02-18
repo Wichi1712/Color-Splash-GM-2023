@@ -91,8 +91,9 @@ if (pausa == false){
             <string>///Dibuja texto
 if ( pausa == true){
     draw_rectangle_color(32,room_height,room_width - 234, 0,c_black,c_black,c_orange,c_orange,0);
+    draw_background(bg_pause2,90,150 );
     //draw_text( room_width/3, room_height/2 - 200, string_upper("pause"));
-    draw_sprite(spr_pause,0,90,150);
+    //draw_sprite(spr_pause,0,90,150);
     draw_text(room_width/3 - 55, 350, "Press ESCAPE");
 }
 </string>

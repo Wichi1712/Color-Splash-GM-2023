@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Variables de imagen y sonido
-audio_play_sound(splash,10,0);
+audio_play_sound(splash,2,0);
 randomize();
 image_angle = random(360);
 
